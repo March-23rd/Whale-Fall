@@ -23,7 +23,7 @@ const webpackConfigDev = {
       template: resolve('../app/index.html')
     }),
     new OpenBrowserPlugin({
-      url: `http://localhost:${PORT}/#/login`,
+      url: `http://localhost:${PORT}/#/home`,
     }),
   ],
   devtool: 'source-map',

@@ -41,7 +41,8 @@ module.exports = {
                 // exclude: /node_modules/,
                 include: [
                     resolve('../app/styles'),
-                    resolve('../app/components')
+                    resolve('../app/components'),
+                    resolve('../app/configs')
                 ],
                 loader: ExtractTextPlugin.extract({
                     fallback: 'style',
