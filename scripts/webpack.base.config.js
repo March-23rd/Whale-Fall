@@ -92,7 +92,8 @@ module.exports = {
             verbose: true,
         }),
         // 提取css
-        new ExtractTextPlugin('style.[hash:4].css')
+        new ExtractTextPlugin('style.[hash:4].css'),
+        new webpack.HotModuleReplacementPlugin()
     ],
     optimization: {
         splitChunks: {

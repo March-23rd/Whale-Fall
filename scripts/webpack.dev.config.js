@@ -19,7 +19,9 @@ const webpackConfigDev = {
       IS_DEVELOPMETN: true,
     }),
     // 将打包后的资源注入到html文件内    
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: resolve('../app/index.html')
+    }),
     new OpenBrowserPlugin({
       url: `http://localhost:${PORT}/#/login`,
     }),
