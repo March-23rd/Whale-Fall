@@ -4,6 +4,10 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 
+import LayerFirst from '../components/LayerFirst/LayerFirst'
+
+import './initstyle.less'
+
 export default () => (
     // <BrowserRouter>
     //       <Route path="/login" component={Header} />
@@ -11,8 +15,7 @@ export default () => (
 
     <HashRouter>
         <Switch>
-            <Route path="/login" component={Header} />
-            <Route path="/footer" component={Footer} />
+            <Route path="/home" component={LayerFirst} /> 
             
         </Switch>
     </HashRouter>
