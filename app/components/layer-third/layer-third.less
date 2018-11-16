@@ -1,0 +1,86 @@
+.about {
+    display: flex;
+    height: 100vh;
+    background: #ddd;
+    .container-block {
+        width: 100%;
+        align-self: center;
+    }
+    .about-container {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        background: ghostwhite;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        transition: all .3s ease-in-out;
+        box-shadow: 0 0 4px #ddd;
+        position: relative;
+        &::before {
+            content: "";
+            border-left: 1px dashed #ddd;
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            height: 80%;
+            transform: translateY(-50%);
+        }
+        .block {
+            width: 40%;
+            height: 180px;
+            position: relative;
+            display: inline-block;
+            .role-content {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                padding-left: 40px;
+                transform: translateY(-50%);
+                .role-title {
+                    font-size: 32px;
+                    color: #333;
+                    font-family: fzltxh,NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","WenQuanYi Micro Hei",sans-serif;
+                }
+                .sub-role-title {
+                    font-size: 14px;
+                    color: #666;
+                    margin-top: 20px;
+                }
+            }
+            .manager-img {
+                background: url(/noah-static/3.0.0/ark/img/manager.png);
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 30px;
+                background-size: contain;
+                background-position: 0 0;
+                margin-bottom: 20px;
+            }
+            .content {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #333;
+                font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","WenQuanYi Micro Hei",sans-serif;
+                p {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                ul {
+                    padding-left: 15px;
+                }
+                li {
+                    position: relative;
+                    padding-left: 10px;
+                    color: #666;
+                    letter-spacing: 1px;
+                    font-size: 13px;
+                }
+            }
+        }
+    } 
+}
