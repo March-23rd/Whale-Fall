@@ -42,6 +42,7 @@ module.exports = {
                 include: [
                     resolve('../app/styles'),
                     resolve('../app/components'),
+                    resolve('../app/pages'),
                     resolve('../app/configs')
                 ],
                 loader: ExtractTextPlugin.extract({
