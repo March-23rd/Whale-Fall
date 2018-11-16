@@ -1,0 +1,42 @@
+.jump-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    a {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 10px 0;
+        border-radius: 50%;
+        position: relative;
+        opacity: .6;
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #999;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            transition: all .3s;
+        }
+    }
+    a.active::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #666;
+        background: 0 0;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .3s;
+    }
+}
